@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration Page</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body style="background-image: url(https://wallpaperaccess.com/full/1236489.jpg)">
+    <nav>
+        <div class="logo">
+          <img src="https://www.claysys.com/app/themes/claysys-2019/assets/images/claysys-logo.png" alt="Logo" height="90px">
+        </div>
+        <ul class="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="login.html">Sign in</a></li>
+          <li><a href="reg.html">Sign up</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+        </ul>
+      </nav><br>
+  <h1>Registration Form</h1>
+  <form id="registrationForm" onsubmit="return validateForm()">
+    <div class="form-group">
+      <label for="firstname">First name:</label>
+      <input type="text" id="firstname" required>
+    </div>
+
+    <div class="form-group">
+      <label for="lastname">Last name:</label>
+      <input type="text" id="lastname" required>
+    </div>
+
+    <div class="form-group">
+      <label for="dob" >Date of birth:</label>
+      <input type="date" id="dob" required  onchange=" Age()">
+    </div>
+
+    <div class="form-group">
+      <label for="age">Age:</label>
+      <input type="number" id="age" required>
+    </div>
+
+    <div class="form-group">
+      <label for="gender">Gender:</label>
+      <select id="gender" required>
+        <option value="">Select</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="phonenumber">Phone nmber:</label>
+      <input type="tel" id="phonenumber" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email address:</label>
+      <input type="email" id="email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="address">Address:</label>
+      <textarea id="address" required></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="state">State:</label>
+      <select id="state" onchange="Cities()" required>
+        <option value="">Select</option>
+        <option value="state1">Kerala</option>
+        <option value="state2">Tamilnadu</option>
+        <option value="state3">Goa</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="city">City:</label>
+      <select id="city" required>
+        <option value="">Select</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input type="text" id="username" required>
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" required>
+    </div>
+
+    <div class="form-group">
+      <label for="confirmPassword">Confirm password:</label>
+      <input type="password" id="confirmpassword" required>
+    </div>
+
+    <div class="form-group">
+      <input type="submit" value="Register">
+    </div>
+  </form><br><br>
+
+  <script src="script.js"></script>
+  <!-- FOOTER -->
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-content">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="signin.html">Sign in</a></li>
+          <li><a href="signup.html">Sign up</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+        </ul>
+      </div>
+    </div><center>
+    <div class="footer-content" style="color: aliceblue;">
+        <h3>Contact Details</h3>
+        <p>123 Main Street, City</p>
+        <p>Phone: 123-456-7890</p>
+        <p>Email: info@example.com</p>
+      </div>
+    </div><hr>
+    <div class="footer-bottom" style="color: aliceblue;">
+      <p>&copy; 2023 Your Website. All rights reserved.</p>
+    </div></center>
+  </footer>
+  
+  <!-- FOOTER -->
+</body>
+</html>
